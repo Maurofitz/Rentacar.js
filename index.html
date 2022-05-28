@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RENT A CAR</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                <h1 class="m-0 text-primary">NEW CAR</h1>
+                </a>   
+            </nav>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">RENT <span class="text-primary">a CAR</span></h1>
+                    <p class="animated fadeIn mb-4 pb-2">Los mejores autos los mejores precios</p>
+                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Mas INFO</a>
+                </div>
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/home.jpg" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/home.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br><br>
+        <h1 class="text-center mb-3">ALQUILA TU PROXIMO AUTO</h1>
+        <div class="form-container mt-5">
+            <form class="w-50 mx-auto" id="entryForm">            
+                <div class="form-group">
+                    <label for="owner">Nombre y Apellido:</label>
+                    <input type="text" class="form-control rounded-0 shadow-sm" id="owner" placeholder="Nombre y Apellido">
+                </div>
+                <div class="form-group">
+                    <label for="car">MODELO DE AUTO</label>
+                    <input type="text" class="form-control rounded-0 shadow-sm" id="car" placeholder="modelo de auto ">
+                </div>
+                <div class="form-group">
+                    <label for="licensePlate"> Ciudad</label>
+                    <input type="text" class="form-control rounded-0 shadow-sm" id="licensePlate" placeholder="ciudad">
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="entryDate">Fecha de Entrada:</label>
+                        <input type="date" class="form-control rounded-0 shadow-sm" id="entryDate">
+                    </div>
+                    <div class="col-6">
+                        <label for="exitDate">Fecha de Salida:</label>
+                        <input type="date" class="form-control rounded-0 shadow-sm" id="exitDate">
+                    </div>
+                </div>
+                <button type="submit" class="btn mx-auto btn-success d-block mt-5 rounded-0 shadow" id="btnOne">Agregar Auto</button>
+            </form>
+        </div>
+        <div class="table-container mt-5 mb-5 w-75 mx-auto" >
+                <h5 class="text-center mb-3">Consultas</h5>
+                <!-- <input type="text" class="w-100 mb-3" id="searchInput" placeholder="Búsqueda..."> -->
+                <table class="table btn-light table-striped shadow " id="modeloTable">
+                        <thead class="text-secondary" id="tableHead">
+                          <tr>
+                            <th scope="col">Dueño</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Ciudad</th>
+                            <th scope="col">Fecha de Entrada</th>
+                            <th scope="col">Fecha de Salida</th>
+                            <th scope="col">Cerrar</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+                </table>  
+        </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/rent.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Vehículos limpios. Flexibilidad en tu reserva. Distancia de seguridad en los mostradores.</h1>
+                        <p class="mb-4">Estamos trabajando con nuestros colaboradores para que conducir siga siendo seguro.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Puede cancelar la mayoría de las reservas con Rentalcars.com sin cargo, siempre y cuando notifique la cancelación con al menos 48 horas de adelanto.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Si cancelas antes de que empiece la reserva, recibirás un reembolso completo de lo que pagaste por el seguro.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Para cancelar, solo tienes que acceder a tu reserva online o ponerte en contacto con nosotros.</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="">leer mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-0 gx-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <h1 class="mb-3">Modelos Disponibles</h1>
+                            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit diam justo sed rebum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid" id="onix" src="img/onix.jpg" alt="">
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Alquilar</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">disponible</div>
+                                    </div>
+                                    <div class="p-4 pb-0" id="resultadoOnix">
+                                        <h5 class="text-primary mb-3">$12,345</h5>
+                                        <a class="d-block h5 mb-2">Chevrolet Onix</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Ciudad de Buenos Aires</p>
+                                        <button type="submit" class="btn mx-auto btn-success d-block mt-5 rounded-0 shadow" id="btnOnix">Agregar Auto</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/ka.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Alquilar</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">disponible</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">$8.500</h5>
+                                        <a class="d-block h5 mb-2" href="">Ford KA</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Ciudad de Buenos Aires</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/eco.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Alquilar</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">No Disponible</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">$15.300</h5>
+                                        <a class="d-block h5 mb-2" href="">Ford EcoSport</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Ciudad de Buenos Aires</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/208.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Alquilar</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Disponible</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">$10,565</h5>
+                                        <a class="d-block h5 mb-2" href="">Peugeot 208</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Buenos Aires</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/partner.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Alquilar</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Disponible</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">$17,345</h5>
+                                        <a class="d-block h5 mb-2" href="">Peugeot partner</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Ciudad de Buenos Aires</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/cronos.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Alquilar</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Disponible</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">$10,105</h5>
+                                        <a class="d-block h5 mb-2" href="">Fiat Cronos</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Ciudad de Buenos Aires</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="container my-5 text-center">  
+                                    <button class="btn btn-primary w-100" onclick="traer()">LISTA DE MODELOS ACTUALIZADA</button>
+                                    <div class="mt-5">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">marca</th>
+                                                    <th scope="col">Madelo</th>
+                                                    <th scope="col">Estado</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="listaActualizada">
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contacto</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av. 9 de Julio s/n, C1043 CABA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>5616516351</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@rent.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Links</h5>
+                        <a class="btn btn-link text-white-50" href="">Sobre nosotros</a>
+                        <a class="btn btn-link text-white-50" href="">Contacto</a>
+                        <a class="btn btn-link text-white-50" href="">Servicios</a>
+                        <a class="btn btn-link text-white-50" href="">Terminos & Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

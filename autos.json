@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "marca": "Peugeot",
+        "email": "2008",
+        "estado": false
+    },
+    {
+        "id": 2,
+        "marca": "Peugeot",
+        "modelo": "Partner",
+        "estado": false
+    },
+    {
+        "id": 3,
+        "marca": "Renault",
+        "modelo": " Duster",
+        "estado": true
+    },
+    {
+        "id": 4,
+        "marca": "Citroen",
+        "modelo": "Citroën C3",
+        "estado": true
+    },
+    {
+        "id": 5,
+        "marca": "Peugeot",
+        "email": "2008",
+        "estado": false
+    },
+    {
+        "id": 6,
+        "marca": "Renault",
+        "modelo": "Clio",
+        "estado": false
+    },
+    {
+        "id": 7,
+        "marca": "Fiat",
+        "modelo": "Fiat Argo",
+        "estado": true
+    },
+    {
+        "id": 8,
+        "marca": "Peugeot",
+        "modelo": "207",
+        "estado": true
+    }
+]
