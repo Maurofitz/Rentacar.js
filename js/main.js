@@ -213,24 +213,22 @@ let contenido = document.querySelector('#listaActualizada')
                 `
             }
         }
-
-
-
-
-
-
-/* function archivojson() {
-    fetch('autos.json')
-        .then(function(res) {
-            return res.json();
-        })
-        .then(function(data){
-            let html = '';
-            data.forEach(function(onix) {
-                html += `
-                <li>${onix.marca} ${onix.año} ${onix.disponible}</li>
-                `;
-        })
-        document.getElementById('#resultadoOnix').innerHTML = html;
-    })
-} */
+        document.querySelector('#searchInput').addEventListener('keyup', function searchTable(){
+            const searchValue = document.querySelector('#searchInput').value.toUpperCase();
+            const tableLine = (document.querySelector('#tableBody')).querySelectorAll('tr');
+            for(let i = 0; i < tableLine.length; i++){
+                var count = 0;
+                const lineValues = tableLine[i].querySelectorAll('td');
+                for(let j = 0; j < lineValues.length - 1; j++){
+                    if((lineValues[j].innerHTML.toUpperCase()).startsWith(searchValue)){
+                        count++;
+                    }
+                }
+                if(count > 0){
+                    tableLine[i].style.display = '';
+                }else{
+                    tableLine[i].style.display = 'none';
+                }
+            }
+        });
+    
